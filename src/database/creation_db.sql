@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS `posts_repo` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `posts_repo`;
+
+CREATE TABLE IF NOT EXISTS `posts` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(50) NOT NULL,
+  `content` TEXT NOT NULL,
+  `author` varchar(100) NOT NULL,
+  `imageNameLink` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
